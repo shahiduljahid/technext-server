@@ -53,7 +53,7 @@ app.post("/send_mail", async (req, res) => {
   const subject = req.body.subject;
   const mailBody = req.body.mailBody;
   const email = req.body.email;
-  console.log(subject);
+  
   const transport = nodemailer.createTransport({
     host: "smtp.mailtrap.io",   //use your mailtrap host here
     port: 2525,                 //use your mailtrap port here
